@@ -18,6 +18,7 @@ namespace LoggingKata
             ITrackable tB2 = new TacoBell();
             var parser = new TacoParser();
             var locations = lines.Select(line => parser.Parse(line)).ToArray();
+
             double distance = 0;
             for (int i = 0; i < locations.Length; i++)
             {
